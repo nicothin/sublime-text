@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ST3 hotkeys</title>
+</head>
+<body>
+
+<header class="page-header  container">
+  <h1>Шпаргалка ниндзя Sublime Text 3</h1>
+  <p>Николай Громов. <a href="http://nicothin.ru">nicothin.ru</a></p>
+</header>
+
+<div class="container">
+  <input class="find" type="text" id="find" value="" placeholder="Минимум 3 символа">
+  <div class="select-os">
+    <label>
+      <input type="checkbox" id="os_win" checked onchange="javascript:keys_trigger('os_win','keys-win');"> Windows
+    </label>
+    <label>
+      <input type="checkbox" id="os_osx" checked onchange="javascript:keys_trigger('os_osx','keys-osx');"> OS X
+    </label>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col">
+      <table class="key-table  key-table-1">
+        <caption>Выделение</caption>
+        <tr>
+          <td class="description">Выделить слово, в котором курсор <br>
+          <small>(2× — выделение совпадающих)</small></td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>D</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>D</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Найти и выделить всё <br>
+          <small>(выделено слово)</small></td>
+          <td class="keys  keys-win"><kbd>Alt<span class="plus">+</span>F3</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Cmd<span class="plus">+</span>G</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Выделить строку</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>L</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>L</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Выделить содержимое скобок</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>M</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>M</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Выделить слово справа от курсора</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span><span class="icon-right"></span></kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span><span class="icon-right"></span></kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Выделить слово слева от курсора</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span><span class="icon-left"></span></kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span><span class="icon-left"></span></kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Выделить строки с идентичным отступом</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>J</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Cmd<span class="plus">+</span>J</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Вертикальное выделение</td>
+          <td class="keys  keys-win"><kbd>Shift<span class="plus">+</span>ПКМ</kbd></td>
+          <td class="keys  keys-osx">-</td>
+        </tr>
+      </table>
+
+      <table class="key-table  key-table-2">
+        <caption>Поиск</caption>
+        <tr>
+          <td class="description">Поиск конкретного файла в проекте</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>P</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>P</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Поиск в файле</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>F</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>F</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Поиск <span class="icon-right"></span> следующее вхождение</td>
+          <td class="keys  keys-win"><kbd>Enter</kbd></td>
+          <td class="keys  keys-osx"><kbd>Enter</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Поиск <span class="icon-right"></span> выделить всё найденное</td>
+          <td class="keys  keys-win"><kbd>Alt<span class="plus">+</span>Enter</kbd></td>
+          <td class="keys  keys-osx"><kbd>Alt<span class="plus">+</span>Enter</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Поиск <span class="icon-right"></span> предыдущее вхождение</td>
+          <td class="keys  keys-win"><kbd>Shift<span class="plus">+</span>Enter</kbd></td>
+          <td class="keys  keys-osx"><kbd>Shift<span class="plus">+</span>Enter</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Поиск <span class="icon-right"></span> закрыть, выделить результат</td>
+          <td class="keys  keys-win"><kbd>Esc</kbd></td>
+          <td class="keys  keys-osx"><kbd>Esc</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Поиск <span class="icon-right"></span> вкл./выкл. рег. выражения</td>
+          <td class="keys  keys-win"><kbd>Alt<span class="plus">+</span>R</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>Alt<span class="plus">+</span>R</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Поиск <span class="icon-right"></span> вкл./выкл. чувств. к регистру</td>
+          <td class="keys  keys-win"><kbd>Alt<span class="plus">+</span>C</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>Alt<span class="plus">+</span>C</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Поиск <span class="icon-right"></span> вкл./выкл. поиск слова целиком</td>
+          <td class="keys  keys-win"><kbd>Alt<span class="plus">+</span>W</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>Alt<span class="plus">+</span>W</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Живой поиск в файле</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>I</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>I</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Живой поиск <span class="icon-right"></span> закрыть, выдел. результат</td>
+          <td class="keys  keys-win"><kbd>Enter</kbd></td>
+          <td class="keys  keys-osx"><kbd>Enter</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Живой поиск <span class="icon-right"></span> закрыть</td>
+          <td class="keys  keys-win"><kbd>Esc</kbd></td>
+          <td class="keys  keys-osx"><kbd>Esc</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Поиск и замена по файлам в папке</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>F</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Cmd<span class="plus">+</span>F</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Поиск и замена по файлу</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>H</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Cmd<span class="plus">+</span>F</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Заменить следущее</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>H</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Cmd<span class="plus">+</span>E</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Следущее вхождение искомого</td>
+          <td class="keys  keys-win"><kbd>F3</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>G</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Предыдущее вхождение искомого</td>
+          <td class="keys  keys-win"><kbd>Shift<span class="plus">+</span>F3</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>Shift<span class="plus">+</span>G</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Следущее вхождение искомого <br>
+          <small>(только в ходе поиска по файлам в папке)</small></td>
+          <td class="keys  keys-win"><kbd>F4</kbd></td>
+          <td class="keys  keys-osx"><kbd>F4</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Предыдущее вхождение искомого <br>
+          <small>(только в ходе поиска по файлам в папке)</small></td>
+          <td class="keys  keys-win"><kbd>Shift<span class="plus">+</span>F4</kbd></td>
+          <td class="keys  keys-osx"><kbd>Shift<span class="plus">+</span>F4</kbd></td>
+        </tr>
+      </table>
+
+      <table class="key-table  key-table-3">
+        <caption>Блоки кода</caption>
+        <tr>
+          <td class="description">Свернуть текущий блок</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>[</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Cmd<span class="plus">+</span>[</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Развернуть текущий блок</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>]</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Cmd<span class="plus">+</span>]</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Закомментировать строку</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>/</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>/</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Закомментировать блок кода <br>
+          <small>(курсор в блоке)</small></td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>/</kbd></td>
+          <td class="keys  keys-osx">-</td>
+        </tr>
+      </table>
+
+      <table class="key-table  key-table-4">
+        <caption>Вкладки</caption>
+        <tr>
+          <td class="description">Создать вкладку</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>N</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>N</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Закрыть вкладку</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>W</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>W</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Сохранить</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>S</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>S</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Сохранить как</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>S</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>Shift<span class="plus">+</span>S</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Переместить вкладку в обл. с номером <br>
+          <small>(показаны 2 и более областей)</small></td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>1...0</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>1...0</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Показать соотв. вкладку</td>
+          <td class="keys  keys-win"><kbd>Alt<span class="plus">+</span>1...0</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>1...0</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Предыдущая вкладка</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>PageUp</kbd></td>
+          <td class="keys  keys-osx"><kbd>???</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Следующая вкладка</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>PageDown</kbd></td>
+          <td class="keys  keys-osx"><kbd>???</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Следующая вкладка в стеке</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Tab</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Tab</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Предыдущая вкладка в стеке</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>Tab</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>Tab</kbd></td>
+        </tr>
+      </table>
+
+    </div>
+
+    <div class="col">
+
+      <table class="key-table  key-table-5">
+        <caption>Текст</caption>
+        <tr>
+          <td class="description">Вставить из буфера с отступом</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>V</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>Shift<span class="plus">+</span>V</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Удалить слово перед курсором</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span><abbr title="Backspace">Bsp</abbr></kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span><abbr title="Backspace">Bsp</abbr></kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Удалить слово после курсора</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Del</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Del</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Удалить строку перед курсором</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span><abbr title="Backspace">Bsp</abbr></kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Cmd<span class="plus">+</span><abbr title="Backspace">Bsp</abbr></kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Удалить строку после курсора</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>Del</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Cmd<span class="plus">+</span>Del</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Продублировать текст <br>
+          <small>(выделен фрагмент текста)</small></td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>D</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>Shift<span class="plus">+</span>D</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Преобразовать в прописные буквы <br>
+          <small>(выделен фрагмент текста)</small></td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>K<span class="plus">+</span>U</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>K<span class="plus">+</span>U</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Преобразовать в строчные буквы <br>
+          <small>(выделен фрагмент текста)</small></td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>K<span class="plus">+</span>L</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>K<span class="plus">+</span>L</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Проверка орфографии вкл./выкл.</td>
+          <td class="keys  keys-win"><kbd>F6</kbd></td>
+          <td class="keys  keys-osx"><kbd>F6</kbd></td>
+        </tr>
+      </table>
+
+      <table class="key-table  key-table-6">
+        <caption>Строки</caption>
+        <tr>
+          <td class="description">Добавить строке отступ <br>
+          <small>(курсор в начале строки)</small></td>
+          <td class="keys  keys-win"><kbd>Tab<kbd></td>
+          <td class="keys  keys-osx"><kbd>Tab</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Убрать строке отступ <br>
+          <small>(курсор в начале строки)</small></td>
+          <td class="keys  keys-win"><kbd>Shift<span class="plus">+</span>Tab</kbd></td>
+          <td class="keys  keys-osx"><kbd>Shift<span class="plus">+</span>Tab</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Добавить строке отступ <br>
+          <small>(курсор в любой позиции)</small></td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>]</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>]</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Убрать у строки отступ <br>
+          <small>(курсор в любой позиции)</small></td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>[</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>[</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Поднять строку вверх</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span><span class="icon-up"></span></kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Cmd<span class="plus">+</span><span class="icon-up"></span></kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Опустить строку вниз</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span><span class="icon-down"></span></kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Cmd<span class="plus">+</span><span class="icon-down"></span></kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Продублировать строку <br>
+          <small>(нет выделения)</small></td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>D</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>Shift<span class="plus">+</span>D</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Вставить строку выше курсора</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>Enter</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>Shift<span class="plus">+</span>Enter</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Вставить строку ниже курсора</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Enter</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>Enter</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Удалить строку, в которой курсор</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>K</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>K</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Объединить строки</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>J</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>J</kbd></td>
+        </tr>
+      </table>
+
+      <table class="key-table  key-table-7">
+        <caption>Переходы</caption>
+        <tr>
+          <td class="description">Переход к файлу в проекте (фильтр)</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>P</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>P</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Перейти к парной скобке</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>M</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>M</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Перейти к строке</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>G</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>G</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Поставить на строке закладку</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>F2</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>F2</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">К следующей закладке</td>
+          <td class="keys  keys-win"><kbd>F2</kbd></td>
+          <td class="keys  keys-osx"><kbd>F2</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">К предыдущей закладке</td>
+          <td class="keys  keys-win"><kbd>Shift<span class="plus">+</span>F2</kbd></td>
+          <td class="keys  keys-osx"><kbd>Shift<span class="plus">+</span>F2</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Убрать все закладки</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>F2</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>Shift<span class="plus">+</span>F2</kbd></td>
+        </tr>
+      </table>
+
+      <table class="key-table  key-table-8">
+        <caption>Курсор</caption>
+        <!-- <tr>
+          <td class="description">Добавить курсор в конец каждой строки <br>
+          <small>(выделено нескольких строк)</small></td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span>L</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd</kbd></td>
+        </tr> -->
+        <tr>
+          <td class="description">Добавить курсор на стр. выше или ниже</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>Alt<span class="plus">+</span><span class="icon-up"></span>/<span class="icon-down"></span></kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Shift<span class="plus">+</span><span class="icon-up"></span>/<span class="icon-down"></span></kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Убрать мультикурсор</td>
+          <td class="keys  keys-win"><kbd>Esc</kbd></td>
+          <td class="keys  keys-osx"><kbd>Esc</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Добавить мультикурсор</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>ЛКМ</kbd></td>
+          <td class="keys  keys-osx"><kbd>Cmd<span class="plus">+</span>ЛКМ</kbd></td>
+        </tr>
+      </table>
+
+      <table class="key-table  key-table-9">
+        <caption>Внешний вид</caption>
+        <tr>
+          <td class="description">Полный экран</td>
+          <td class="keys  keys-win"><kbd>F11</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Cmd<span class="plus">+</span>F</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Только область редактирования</td>
+          <td class="keys  keys-win"><kbd>Shift<span class="plus">+</span>F11</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>Cmd<span class="plus">+</span>Shift<span class="plus">+</span>F</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Показать одну/несколько обл. ред.</td>
+          <td class="keys  keys-win"><kbd>Alt<span class="plus">+</span>Shift<span class="plus">+</span>1...4</kbd></td>
+          <td class="keys  keys-osx"><kbd>Alt<span class="plus">+</span>Cmd<span class="plus">+</span>1...4</kbd></td>
+        </tr>
+        </tr>
+        <tr>
+          <td class="description">Области ред-я сеткой 2×2</td>
+          <td class="keys  keys-win"><kbd>Alt<span class="plus">+</span>Shift<span class="plus">+</span>5</kbd></td>
+          <td class="keys  keys-osx"><kbd>Alt<span class="plus">+</span>Cmd<span class="plus">+</span>5</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Области ред-я в две линии</td>
+          <td class="keys  keys-win"><kbd>Alt<span class="plus">+</span>Shift<span class="plus">+</span>8</kbd></td>
+          <td class="keys  keys-osx"><kbd>Alt<span class="plus">+</span>Shift<span class="plus">+</span>Cmd<span class="plus">+</span>2</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Области ред-я в три линии</td>
+          <td class="keys  keys-win"><kbd>Alt<span class="plus">+</span>Shift<span class="plus">+</span>9</kbd></td>
+          <td class="keys  keys-osx"><kbd>Alt<span class="plus">+</span>Shift<span class="plus">+</span>Cmd<span class="plus">+</span>3</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Перейти к области ред-я с номером</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>1...4</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>1...4</kbd></td>
+        </tr>
+        <tr>
+          <td class="description">Переключиться на боковую панель</td>
+          <td class="keys  keys-win"><kbd>Ctrl<span class="plus">+</span>0</kbd></td>
+          <td class="keys  keys-osx"><kbd>Ctrl<span class="plus">+</span>0</kbd></td>
+        </tr>
+      </table>
+
+    </div>
+
+  </div>
+
+  <div class="about">
+    <p>Ряд комбинаций могут быть заняты в ОС (особенно в OS X) или переопределены плагинами. В последнем случае их можно «вернуть» в Preferences → Key Bindings - User.</p>
+    <p>Дополнения, сообщения об ошибках и лучи любви — в репозиторий.</p>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+// Работа фильтра
+
+document.getElementById('find').focus();
+document.getElementById('find').addEventListener('keyup',find);
+document.getElementById('find').addEventListener('change',find);
+document.getElementById('find').addEventListener('blur',find);
+
+function find() {
+  var find_text = window.document.getElementById('find').value;
+  var all_tr = document.querySelectorAll('tr');
+
+  if (!find_text) {
+    for(var i=0; i < all_tr.length; i++) {
+      all_tr[i].classList.remove('hidden');
+    }
+    tables_show_toggler();
+    return false;
+  }
+
+  find_text = trim(find_text);
+
+  if (find_text.length < 3) {
+    for(var i=0; i < all_tr.length; i++) {
+      all_tr[i].classList.remove('hidden');
+    }
+    tables_show_toggler();
+    return false;
+  }
+
+  if (find_text.length >= 3) {
+    var re = new RegExp(find_text, 'i');
+
+    for(var i=0; i < all_tr.length; i++) {
+      if(!re.test(all_tr[i].querySelector('.description').innerText)) {
+        all_tr[i].classList.add('hidden');
+      }
+      else {
+        all_tr[i].classList.remove('hidden');
+      }
+    }
+    tables_show_toggler();
+  }
+
+}
+
+// Подрезать пробелы нах
+
+function trim(s) {
+     s = s.replace( /^\s+/g, '');
+  return s.replace( /\s+$/g, '');
+}
+
+// Показать или скрыть ячейки win/osx
+
+function keys_trigger(checkbox_id, class_name) {
+  var chbx = document.getElementById(checkbox_id);
+  var all_td = document.getElementsByClassName(class_name);
+  if(chbx.checked){
+    for(var i=0; i < all_td.length; i++) {
+      all_td[i].classList.remove('hidden');
+    }
+  }
+  else {
+    for(var i=0; i < all_td.length; i++) {
+      all_td[i].classList.add('hidden');
+    }
+  }
+}
+
+// Показать или скрыть таблицы
+
+function tables_show_toggler() {
+
+  var all_tables = document.querySelectorAll('.key-table');
+
+  var tr_num_h;
+
+  for(var i=0; i < all_tables.length; i++) {
+    tr_num_h = all_tables[i].querySelectorAll('tr:not(.hidden)').length;
+
+    if(!tr_num_h) {
+      all_tables[i].classList.add('hidden');
+    }
+    else {
+      all_tables[i].classList.remove('hidden');
+    }
+  }
+}
+
+</script>
+
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-size:15px;line-height:1.1;font-family:Roboto, Helvetica, Ubuntu, Tahoma, sans-serif;}
+  table{width:100%;border-collapse:collapse;margin:1em 0;}
+  td{padding:.3em .4em;text-align:left;vertical-align:top;border-bottom:1px solid rgba(0,0,0,.05);}
+  caption{font-size:100%;text-align:left;padding:.4em;font-weight:700;border-bottom:1px solid rgba(0,0,0,.05);}
+  kbd{font-family:'Lucida Console',monospace;font-size:90%;white-space:nowrap;}
+  kbd span[class^="icon-"]:before{vertical-align:.15em;font-size:70%;}
+  h1{font-size:1.5em;margin:1.5em 0 .6em;}
+  p{margin-bottom:.5em;}
+  .description{color:#666;}
+  .description small{opacity:0.65;}
+  .keys{width:170px;}
+  [class*=" icon-"]:before,[class^=icon-]:before{font-family:fontello;font-size:80%;font-style:normal;font-weight:400;speak:none;display:inline-block;text-decoration:inherit;width:1em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+  .icon-down:before{ content:'\e800'; }
+  .icon-left:before{ content:'\e801'; }
+  .icon-right:before{ content:'\e802'; }
+  .icon-up:before{ content:'\e803'; }
+  .plus{display:inline-block;vertical-align:middle;color:#ababab;padding:0 .2em;}
+  .container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px;width:1366px; margin:auto;}
+  .row{display:flex;margin-left:-15px;margin-right:-15px}
+  .col{padding-left:15px;padding-right:15px;width:50%}
+  .hidden{display:none;}
+  .find{display:block;width:300px;margin:1em auto;padding:.3em;font-size:1.2em;min-width:20em;}
+  .page-header{text-align:center;margin-bottom:2em;}
+  .select-os{margin-bottom:1em;text-align:center;}
+  .select-os label{display:inline-block;white-space:nowrap;vertical-align:top;margin:0 1em;}
+  .key-table-1{background-color:hsl(0,100%,98%);}
+  .key-table-2{background-color:hsl(180,100%,96%);}
+  .key-table-3{background-color:hsl(30,100%,98%);}
+  .key-table-4{background-color:hsl(210,100%,98%);}
+  .key-table-5{background-color:hsl(60,100%,98%);}
+  .key-table-6{background-color:hsl(240,100%,99%);}
+  .key-table-7{background-color:hsl(90,100%,98%);}
+  .key-table-8{background-color:hsl(270,100%,98%);}
+  .key-table-9{background-color:hsl(120,100%,98%);}
+  .about{padding:1em .4em;border-top:1px solid rgba(0,0,0,.1);}
+  @font-face{font-family: 'fontello';font-weight: 400;font-style: normal;src:url(data:application/font-woff;charset=utf-8;base64,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) format('woff');}
+</style>
+
+</body>
+</html>
