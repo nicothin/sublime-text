@@ -18,6 +18,7 @@
         "bgra": "background-color: rgba(${1:0,0,0,.5});",
         "var": "var(--${var_name})",
         "df": "display: flex;", // почему-то разворачивается с префиксами, несмотря на настройку
+        "obj": "object-fit: cover;",
       }
     }
   },
