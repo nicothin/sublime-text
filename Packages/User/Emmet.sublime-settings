@@ -31,6 +31,7 @@
     "bem.shortElementPrefix": "_",
     "css.autoInsertVendorPrefixes": "false",
     "lorem.defaultLang": "ru",
+    "sass.propertyEnd": ";",
   },
 
   // Переназваниение синтаксиса
