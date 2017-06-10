@@ -19,6 +19,9 @@
         "var": "var(--${var_name})",
         "df": "display: flex;", // почему-то разворачивается с префиксами, несмотря на настройку
         "obj": "object-fit: cover;",
+        "@mx": "@mixin ${name}()",
+        "@in": "@include ${name};",
+        "@m": "@media (min-width: \\$${screen-md}) {}",
       }
     }
   },
