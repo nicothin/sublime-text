@@ -1,20 +1,22 @@
 {
-  // схема оформления (должен быть указанный файл!)
-  // "color_scheme": "Packages/nicothin.tmTheme",
-  // словарь для проверки орфографии (должен быть указанный файл!)
-  // "dictionary": "Packages/russian_english.dic",
   // размер шрифта по умолчанию
   "font_size": 12,
+
   // всегда показывать область вьюпорта на мини-карте
   "always_show_minimap_viewport": true,
-  // показывать в статусной строку кодировку файла
+
+  // показывать в статусной строке кодировку файла
   "show_encoding": true,
+
   // отключить автодополнение
   "auto_complete": false,
+
   // показывать в сайдбаре имена папок жирным
   "bold_folder_labels": true,
+
   // всегда показывать пробельные символы
   "draw_white_space": "all",
+
   // не показывать в сайдбаре указанные папки
   "folder_exclude_patterns":
   [
@@ -25,6 +27,7 @@
     ".publish",
     "node_modules"
   ],
+  // не показывать в сайдбаре указанные файлы
   "file_exclude_patterns":
   [
     "*.pyc",
@@ -46,21 +49,25 @@
     "*.class",
     "*.psd",
     "*.db",
-    "*.sublime-workspace",
-    "*.sublime-project"
+    "*.sublime-*"
   ],
+
   // подсвечивать линию, в которой курсор
   "highlight_line": true,
+
   // подсвечивать вкладки измененных и несохраненных файлов
   "highlight_modified_tabs": true,
+
   // игнорировать указанные дополнения
   "ignored_packages":
   [
     "Vintage"
   ],
+
   // Отступы над строкой и под строкой
   "line_padding_bottom": 1,
   "line_padding_top": 1,
+
   // показать вертикальные линии
   "rulers":
   [
@@ -68,24 +75,31 @@
     80,
     120
   ],
+
   // сохранять при потере окном фокуса
   "save_on_focus_lost": true,
+
   // по Shift+Tab убирать отступы даже если не выделено несколько строк
   "shift_tab_unindent": true,
-  // проверять орфографию
-  "spell_check": true,
+
   // размер Tab: 2 пробела
   "tab_size": 2,
+
   // использовать пробелы вместо Tab
   "translate_tabs_to_spaces": true,
+
   // убирать пробельные символы в пустых строках и на концах строк при сохранении
   "trim_trailing_white_space_on_save": true,
+
   // не проверять обновления
   "update_check": false,
+
   // список символов, являющийся разделителями слов
   "word_separators": "./\\()\"«»'-:,.;<>~!@#$%^&*|+=[]{}`~?_",
+
   // переносить строки, если не помещаются в ширину
   "word_wrap": true,
+
   // Окончания строк — всегда LF
   "default_line_ending": "unix",
 }
