@@ -1,24 +1,21 @@
 {
-  // Настройки разворачивания аббревиатур
   "snippets": {
     "html": {
-      // включаем фильтр BEM по умолчанию
       "filters": "html, bem",
-      // пара своих сниппетов
       "snippets": {
-        "c1": "<!-- ----------------------------------------------------------------------------\n\t${1:Секция}\n---------------------------------------------------------------------------- -->\n",
-        "blq": "<blockquote>${1:}</blockquote>"
+        "blq": "<blockquote>${1:}</blockquote>",
       }
     },
     "css": {
-      // несколько своих сниппетов
       "snippets": {
-        "c1": "\n\n\n\n\n//------------------------------------------------------------------------------\\\n//\t${1:Секция}\n\\\//------------------------------------------------------------------------------\n",
         "poen": "pointer-events: none;",
+        "obj": "object-fit: cover;",
         "bgra": "background-color: rgba(${1:0,0,0,.5});",
         "var": "var(--${var_name})",
-        "df": "display: flex;", // почему-то разворачивается с префиксами, несмотря на настройку
-        "obj": "object-fit: cover;",
+        "_bn": "#{\\$block-name}",
+        "df": "display: flex;",
+        "dif": "display: inline-flex;",
+        "if": "display: inline-flex;",
         "@mx": "@mixin ${name}()",
         "@in": "@include ${name};",
         "@m": "@media (min-width: \\$${screen-md}) {}",
@@ -26,7 +23,6 @@
     }
   },
 
-  // Настройки
   // http://docs.emmet.io/customization/preferences/
   "preferences": {
     "bem.elementSeparator": "__",
@@ -37,9 +33,9 @@
     "sass.propertyEnd": ";",
   },
 
-  // Переназваниение синтаксиса
+  // Подмена синтаксиса
   // http://docs.emmet.io/customization/syntax-profiles/
-  "syntaxProfiles": {
-    "hbs": "html",
-  }
+  // "syntaxProfiles": {
+  //   "hbs": "html",
+  // }
 }
