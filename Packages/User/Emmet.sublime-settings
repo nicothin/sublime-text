@@ -6,6 +6,9 @@
         "blq": "<blockquote>${1:}</blockquote>",
       }
     },
+    "pug": {
+      "filters": "bem, jade"
+    },
     "css": {
       "snippets": {
         "poen": "pointer-events: none;",
